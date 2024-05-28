@@ -6,7 +6,7 @@ st.title("Chatbot")
 from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
 
-API_KEY = "RcdCowIfLiD1EHgIMLphPw8GCDrMFvt4"
+API_KEY = st.secrets["api_key"]
 MODEL = "open-mistral-7b"
 
 def mistral_completion(text):
