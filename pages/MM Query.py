@@ -26,9 +26,6 @@ EMBEDDINGS_LENGTH = 281
 
 CURRENT_PATH = os.getcwd()
 
-EMBEDDINGS_FILE = r"C:\Projects\Project 031 PHBot\src\embeddings.pkl"
-MM_FILE = r"C:\Projects\Project 031 PHBot\src\MM_parsed.txt"
-
 EMBEDDINGS_FILE = os.path.join(CURRENT_PATH, "embeddings.pkl")
 MM_FILE  = os.path.join(CURRENT_PATH, "MM_parsed.txt")
 
