@@ -22,7 +22,7 @@ def run():
         page_icon="👋",
     )
 
-    st.write("# Welcome to PHB Demo 👋")
+    st.write("# Welcome to DnD Demo 👋")
 
     # create a clear button in the sidebar
     if st.sidebar.button('Clear'):
@@ -31,7 +31,7 @@ def run():
 
     st.markdown(
         """
-        DnD PHB Platform built specifically for Dnd Players
+        DnD Platform built specifically for Dnd Players
         **👈 Select a demo from the sidebar** to see some examples
     """
     )
