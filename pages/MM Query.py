@@ -64,7 +64,7 @@ with open(MM_FILE, "r", encoding="utf-8") as file:
     lines = [line for line in file]
 
 # Load Mistral Client
-client = MistralClient(api_key)
+client = MistralClient(API_KEY)
 
 # Initialize chat history
 if "messages" not in st.session_state:
