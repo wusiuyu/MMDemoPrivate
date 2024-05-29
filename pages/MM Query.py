@@ -29,7 +29,7 @@ CURRENT_PATH = os.getcwd()
 EMBEDDINGS_FILE = os.path.join(CURRENT_PATH, "embeddings.pkl")
 MM_FILE  = os.path.join(CURRENT_PATH, "MM_parsed.txt")
 
-API_KEY = st.secrets["api_key"]
+API_KEY = st.secrets["API_KEY"]
 MODEL = "open-mistral-7b"
 
 TOP_N_ANSWER = 1
