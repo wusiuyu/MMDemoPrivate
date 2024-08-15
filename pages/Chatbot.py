@@ -1,20 +1,22 @@
 # API Call Bot
+# Adding Memory
 import streamlit as st
 
 st.title("Chatbot")
 
-from mistralai.client import MistralClient
-from mistralai.models.chat_completion import ChatMessage
+from mistralai import Mistral
 
-API_KEY = st.secrets["API_KEY"]
+# API_KEY = st.secrets["api_key"]
 MODEL = "open-mistral-7b"
+API_KEY = "a3NT4OluyAY7SVN9VLVGR9K2UFTU0akj"
 
 def mistral_completion(text):
     # Return Text Completion by API call
-    client = MistralClient(api_key=API_KEY)
-    messages = [ChatMessage(role="user", content=text)]
-    chat_response = client.chat(model=MODEL,messages=messages)
+    client = Mistral(api_key=API_KEY)
+    messages = [{"role": "user", "content": text}]
+    chat_response = client.chat.complete(model=MODEL,messages=messages)
     return chat_response.choices[0].message.content
+
 
 # Initialize chat history
 if "messages" not in st.session_state:
