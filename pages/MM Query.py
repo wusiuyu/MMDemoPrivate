@@ -1,5 +1,12 @@
 # Issue Query Bot
+import os
+import math
+import pickle
+
+import numpy as np
 import streamlit as st
+
+from mistralai import Mistral
 
 st.title("Monster Query Bot")
 
@@ -11,15 +18,6 @@ st.subheader("Example Query:\n What Monsters can eat metal?")
 # Embedding via API
 # Embedding Prompt
 # Cos Similarity
-# 
-
-import os
-import math
-import pickle
-
-import numpy as np
-
-from mistralai import Mistral
 
 EMBEDDINGS_LENGTH = 281
 
